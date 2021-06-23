@@ -9,12 +9,12 @@
 [general]
 name=manual_sec_builder
 qgisMinimumVersion=2.0
-description=tool for building routes
-version=2.1
+description=tool for manipulating .sec and .rte files
+version=2.12
 author=drew
 email=drew.bennett@ptsinternational.co.uk
 
-about=Tool for building routes from map layer.
+about=Provide a brief description of the plugin and its purpose.
 
 tracker=http://bugs
 repository=http://repo
@@ -32,7 +32,7 @@ homepage=http://homepage
 category=Plugins
 icon=icon.png
 # experimental flag
-experimental=False
+experimental=True
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False

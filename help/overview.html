@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>  
+ <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>  
+
+<title>MSB help</title>
+
+
+
+<body>
+    <h3 id="home">Manual Sec Builder</h3>
+
+
+<p>Tool for building and editing routes. Saves and loads routes in .sec,.rte and .sr format.</p>
+
+
+
+<h4 id="loading"> Loading saved routes </h4>
+	<p>Use the load menu to load routes. Loading a route will discard the current route.</p>
+
+
+
+<h4 id="inserting"> Inserting Sections and Dummys into route </h4>
+
+<p> New sections/dummys can be inserted into the route through the insert menu. They will be inserted into the route at the row in the 'insert at row' spinbox.</p>
+
+
+<p>
+They can be inserted:
+<li> From .sec file (value in reversed? dropdown will be used for direction)</li>
+<li> From .rte file (direction will be found using direction field of feature with section label)</li>
+<li> From .sr file (using direction in file)</li>
+<li> From selected feature of layer(value in reversed? dropdown will be used for direction)</li>
+
+
+</p>
+
+
+<h4 id="Routes table"> Routes table </h4>
+
+<p>The routes table contains every section in the route(ordered consecutively) and whether it is in the forward or reversed direction.</p>
+
+<p> Right clicking the route table will produce a menu with options to:
+<li> Delete selected rows</li>
+<li> Delete all rows</li>
+<li> Select on layer(selects features of layer that are selected in routes table)</li>
+<li> Select from layer(selects rows of route table that are selected on layer)</li>
+
+<p> Rows can be rearranged by dragging and dropping</p>
+
+
+
+
+
+     
+</body>
+
+
+</html>

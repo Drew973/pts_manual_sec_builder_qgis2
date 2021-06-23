@@ -1,33 +1,16 @@
-# -*- coding: utf-8 -*-
-"""
-/***************************************************************************
- manual_sec_builder
-                                 A QGIS plugin
- tool for building routes
-                              -------------------
-        begin                : 2019-07-23
-        git sha              : $Format:%H$
-        copyright            : (C) 2019 by drew
-        email                : drew.bennett@ptsinternational.co.uk
- ***************************************************************************/
+from qgis.PyQt.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, Qt
+#from PyQt4.QtGui import QAction, QIcon
+from qgis.PyQt.QtGui import QIcon
+from qgis.PyQt.QtWidgets import QAction
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
-"""
-from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, Qt
-from PyQt4.QtGui import QAction, QIcon
-# Initialize Qt resources from file resources.py
-import resources
 
-# Import the code for the DockWidget
-from manual_sec_builder_dockwidget import manual_sec_builderDockWidget
 import os.path
+#from . import manual_sec_builder_dockWidget 
+#from .manual_sec_builder import manual_sec_builder_dockwidget
+from .manual_sec_builder_dockwidget import manual_sec_builderDockWidget
+# Initialize Qt resources from file resources.py
+#import resources
+
 
 
 class manual_sec_builder:

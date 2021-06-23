@@ -1,5 +1,6 @@
 class section():
-    def __init__(self,label='',dummy=False,reverse=None,direction=''):
+    def __init__(self,feature,dummy=False,reverse=None,direction=''):
+        self.feature=feature
         self.dummy=dummy#True if dummy
         self.reverse=reverse#True if in CL1
         self.direction=direction#direction code like NB,EB...
@@ -14,6 +15,7 @@ class section():
     def flip_direction(self):
         if not self.reverse is None:
             self.reverse= not self.reverse
+            
 
 
     def xsp(self):
@@ -53,3 +55,7 @@ class section():
         if self.reverse==False:
             t='No'
         return t
+
+
+    def toQstandardItem(self,labelField):
+        pass

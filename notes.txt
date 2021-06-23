@@ -1,0 +1,4 @@
+no x and y values in larp19 for sec=2900A69/122 or  lrp19.sec='2900A69/230'
+no x and y values for some/all roundabout.
+x and y are optional.
+value when missing should be empty space?
