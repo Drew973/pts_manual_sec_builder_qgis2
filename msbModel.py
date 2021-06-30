@@ -16,9 +16,6 @@ class msbModel(QtGui.QStandardItemModel):
         self.setHorizontalHeaderLabels(self.headerLabels)
 
 
-        self.revs=['Yes','No','Leave Blank']
-        self.bools=[True,False,None]
-
 
     def dropMimeData(self, data, action, row, col, parent):
         """
@@ -161,13 +158,27 @@ class msbModel(QtGui.QStandardItemModel):
 
 
     def revToBool(self,rev):
-        i=self.revs.index(rev)
-        return self.bools[i]
+        if not rev:
+            return None
+        
+        if rev.lower()=='no':
+            return False
+        
+        if rev.lower()=='yes':
+            return True
+
 
 
     def boolToRev(self,b):
-        i=self.bools.index(b)
-        return self.revs[i]
+       
+        if b is None:
+            return ''
+        
+        if b:
+            return 'Yes'
+        
+        if b==False:
+            return 'No'
             
 
     #surveys need to start at start node and finish at end node. 
@@ -177,7 +188,7 @@ class msbModel(QtGui.QStandardItemModel):
         for i in range(self.rowCount(),0):#count down to avoid problems with indexes changing.
             pass
 
-
+#unused
     def remove_consecutive(self):
         lastLabel = None
         lastDirection = None

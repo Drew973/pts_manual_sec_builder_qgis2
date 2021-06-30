@@ -10,7 +10,7 @@
 name=manual_sec_builder
 qgisMinimumVersion=2.0
 description=tool for manipulating .sec and .rte files
-version=2.12
+version=2.13
 author=drew
 email=drew.bennett@ptsinternational.co.uk
 
